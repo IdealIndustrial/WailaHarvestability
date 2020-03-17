@@ -61,7 +61,10 @@ public class WailaHandler implements IWailaDataProvider
 		EntityPlayer player = accessor.getPlayer();
 
 		// for disguised blocks
-		if (!ProxyGregTech.isOreBlock(block) && itemStack.getItem() instanceof ItemBlock)
+		if (itemStack.getItem() instanceof ItemBlock
+				&& !ProxyGregTech.isOreBlock(block)
+				&& !ProxyGregTech.isCasing(block)
+				&& !ProxyGregTech.isMachine(block))
 		{
 			block = Block.getBlockFromItem(itemStack.getItem());
 			meta = itemStack.getItemDamage();
