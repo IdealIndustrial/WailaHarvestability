@@ -18,7 +18,7 @@ buildscript {
 apply plugin: 'forge'
 
 minecraft {
-    version = "1.7.10-10.13.1.1225"
+    version = "1.7.10-10.13.4.1614-1.7.10"
 }
 
 version = "1.1.7-GTNH"
@@ -44,7 +44,7 @@ repositories {
 }
 
 dependencies {
-    compile "mcp.mobius.waila:Waila:1.5.5_1.7.10"
+    compile "mcp.mobius.waila:Waila:1.5.10_1.7.10"
 }
 
 // variable substitution in java files
